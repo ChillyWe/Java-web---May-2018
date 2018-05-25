@@ -88,8 +88,7 @@ public class RequestHandler {
     }
 
     private byte[] processResourceRequest() {
-        String assetPath = ASSETS_PATH +
-                this.httpRequest.getRequestUrl();
+        String assetPath = this.httpRequest.getRequestUrl();
 
         File file = new File(assetPath);
 
