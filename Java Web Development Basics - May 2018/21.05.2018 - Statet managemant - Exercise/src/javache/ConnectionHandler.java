@@ -33,7 +33,16 @@ public class ConnectionHandler extends Thread {
     @Override
     public void run() {
         try {
-            String requestContent = Reader.readAllLines(this.clientSocketInputStream);
+            String requestContent = null;
+
+            while (true) {
+                 requestContent = Reader.readAllLines(this.clientSocketInputStream);
+
+                 if (requestContent.length() > 0) {
+                     break;
+                 }
+            }
+
             byte[] responseContent = this.requestHandler.handleRequest(requestContent);
             Writer.writeBytes(responseContent, this.clientSocketOutputStream);
             this.clientSocketInputStream.close();

@@ -10,6 +10,8 @@ import java.nio.file.Paths;
 public class RequestHandler {
     private static final String HTML_EXTENSION_AND_SEPARATOR = ".html";
 
+    public static final String HTML_FOLDER_EXTENSION = "html\\";
+
     private HttpRequest httpRequest;
 
     private HttpResponse httpResponse;
@@ -108,9 +110,17 @@ public class RequestHandler {
     }
 
     private byte[] processPageRequest(String page) {
-        String pagePath = WebConstants.PAGES_FOLDER_PATH +
-                page
-                + HTML_EXTENSION_AND_SEPARATOR;
+        String pagePath = "";
+
+        if (page.equals("/") || page.equals("/index")) {
+            pagePath = WebConstants.ASSETS_FOLDER_PATH +
+                    page
+                    + HTML_EXTENSION_AND_SEPARATOR;
+        } else {
+            pagePath = WebConstants.ASSETS_FOLDER_PATH + HTML_FOLDER_EXTENSION +
+                    page
+                    + HTML_EXTENSION_AND_SEPARATOR;
+        }
 
         File file = new File(pagePath);
 
@@ -136,6 +146,11 @@ public class RequestHandler {
             //INDEX
 
             return this.processPageRequest("/index");
+        } else if (this.httpRequest.getRequestUrl().equals("/register")) {
+            //REGISTER
+
+            return this.processPageRequest(this.httpRequest.getRequestUrl());
+
         } else if (this.httpRequest.getRequestUrl().equals("/login")) {
             //LOGIN
             HttpSession session = new HttpSessionImpl();
