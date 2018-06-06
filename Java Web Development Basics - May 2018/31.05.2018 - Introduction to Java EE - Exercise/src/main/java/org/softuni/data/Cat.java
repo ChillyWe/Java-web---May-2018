@@ -1,6 +1,5 @@
 package org.softuni.data;
 
-
 public class Cat {
 
     private String name;
@@ -14,7 +13,6 @@ public class Cat {
         setColor(color);
         setNumberOfLegs(numberOfLegs);
     }
-
 
     public String getName() {
         return this.name;

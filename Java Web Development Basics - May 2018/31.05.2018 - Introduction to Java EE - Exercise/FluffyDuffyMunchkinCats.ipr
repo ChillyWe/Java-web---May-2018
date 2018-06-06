@@ -4,10 +4,10 @@
     <artifact type="war" build-on-make="true" name="ROOT">
       <output-path>$PROJECT_DIR$/out/artifacts/ROOT</output-path>
       <root id="archive" name="ROOT.war">
-        <element id="javaee-facet-resources" facet="31.05.2018 - Introduction to Java EE - Exercise/web/Web" />
+        <element id="javaee-facet-resources" facet="Fluffy Duffy Munchkin Cats/web/Web" />
         <element id="directory" name="WEB-INF">
           <element id="directory" name="classes">
-            <element id="module-output" name="31.05.2018 - Introduction to Java EE - Exercise" />
+            <element id="module-output" name="Fluffy Duffy Munchkin Cats" />
           </element>
         </element>
       </root>
@@ -19,11 +19,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="31.05.2018 - Introduction to Java EE - Exercise" />
+        <module name="Fluffy Duffy Munchkin Cats" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="31.05.2018 - Introduction to Java EE - Exercise" target="8" />
+      <module name="Fluffy Duffy Munchkin Cats" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
@@ -163,10 +163,10 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/31.05.2018 - Introduction to Java EE - Exercise.iml" filepath="$PROJECT_DIR$/31.05.2018 - Introduction to Java EE - Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fluffy Duffy Munchkin Cats.iml" filepath="$PROJECT_DIR$/Fluffy Duffy Munchkin Cats.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" default="false" project-jdk-name="9.0" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" default="false" project-jdk-name="10" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="libraryTable">
