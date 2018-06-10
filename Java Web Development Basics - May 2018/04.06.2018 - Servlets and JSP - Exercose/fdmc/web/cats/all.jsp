@@ -9,6 +9,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<meta http-equiv="refresh" content="3"/><!-- content is in seconds -->
 <html>
 <head>
     <title>FDMC</title>
@@ -18,14 +19,16 @@
 <body>
     <h1>All Cats</h1>
     <hr />
-    <% response.setIntHeader("Refresh", 3);
-
-    Set<Cat> cats = ((CatRepository) application.getAttribute("cats")).getAllCatsSorted();
-
-    for(Cat cat : cats) {
-        String debug = ("<h3> <a href=\"/cats/profile?catName=" + cat.getName() + "\">" + cat.getName() + "</a></h3>\n");
-        out.println(debug);
-    } %>
+    <% session.removeAttribute("REFRESH");
+        Set<Cat> cats = ((CatRepository) application.getAttribute("cats")).getAllCatsSorted();
+        if (cats.size() > 0) {
+            for (Cat cat : cats) {
+                String debug = ("<h3> <a href=\"/cats/profile?catName=" + cat.getName() + "\">" + cat.getName() + "</a></h3>\n");
+                out.println(debug);
+            }
+        } else {
+            out.println("There are no placed cats. <br/>");
+        }%>
     <br />
     <a href="/">Back to Home</a>
 </body>

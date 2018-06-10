@@ -20,7 +20,7 @@ public class OrderRepository {
 
     public Set<Order> takeAllOrdersSorted() {
         return Collections.unmodifiableSet(this.orders.stream()
-                .sorted((a, b) -> a.getMadeOn().compareTo(b.getMadeOn()))
+                .sorted((a, b) -> b.getMadeOn().compareTo(a.getMadeOn()))
                 .collect(Collectors.toSet()));
     }
 }

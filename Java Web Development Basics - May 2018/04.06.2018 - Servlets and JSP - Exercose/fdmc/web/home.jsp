@@ -23,7 +23,7 @@
 <% User currUser = userRepository.getByUsername(session.getAttribute("username").toString());%>
 <% if (currUser.isAdmin()) { %>
 <a href="/cats/create">Create Cat</a> <br/>
-<a href="/orders/all.jsp">Orders</a>
+<a href="/orders/all.jsp">All Orders</a>
 <br/>
 <% } %>
 <a href="/cats/all">All Cats</a>

@@ -31,9 +31,8 @@ public class CatRepository {
     }
 
     public Set<Cat> getAllCatsSorted() {
-        return Collections.unmodifiableSet(this.cats
-                .stream()
-                .sorted((a, b) -> Integer.compare(b.getViewsCount(), a.getViewsCount()))
+        return Collections.unmodifiableSet(this.cats.stream()
+                .sorted((a, b) -> b.getViewsCount().compareTo(a.getViewsCount()))
                 .collect(Collectors.toSet()));
     }
 }
