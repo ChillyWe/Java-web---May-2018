@@ -1,6 +1,6 @@
 <%@ page import="org.softuni.fdmc.data.models.Cat" %>
 <%@ page import="org.softuni.fdmc.data.repos.CatRepository" %>
-<%@ page import="java.util.Set" %>
+<%@ page import="java.util.List" %>
 <%--
   Created by IntelliJ IDEA.
   User: atriu
@@ -18,9 +18,9 @@
 </head>
 <body>
     <h1>All Cats</h1>
-    <hr />
+    <hr/>
     <% session.removeAttribute("REFRESH");
-        Set<Cat> cats = ((CatRepository) application.getAttribute("cats")).getAllCatsSorted();
+        List<Cat> cats = ((CatRepository) application.getAttribute("cats")).getAllCatsSorted();
         if (cats.size() > 0) {
             for (Cat cat : cats) {
                 String debug = ("<h3> <a href=\"/cats/profile?catName=" + cat.getName() + "\">" + cat.getName() + "</a></h3>\n");

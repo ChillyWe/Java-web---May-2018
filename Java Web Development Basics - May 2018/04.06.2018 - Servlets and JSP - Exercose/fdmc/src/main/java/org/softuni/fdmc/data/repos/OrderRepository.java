@@ -4,6 +4,7 @@ import org.softuni.fdmc.data.models.Order;
 
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -18,9 +19,9 @@ public class OrderRepository {
         this.orders.add(order);
     }
 
-    public Set<Order> takeAllOrdersSorted() {
-        return Collections.unmodifiableSet(this.orders.stream()
+    public List<Order> takeAllOrdersSorted() {
+        return Collections.unmodifiableList(this.orders.stream()
                 .sorted((a, b) -> b.getMadeOn().compareTo(a.getMadeOn()))
-                .collect(Collectors.toSet()));
+                .collect(Collectors.toList()));
     }
 }

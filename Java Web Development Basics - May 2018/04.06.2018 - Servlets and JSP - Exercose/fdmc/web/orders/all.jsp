@@ -2,6 +2,7 @@
 <%@ page import="org.softuni.fdmc.data.repos.OrderRepository" %>
 <%@ page import="java.time.format.DateTimeFormatter" %>
 <%@ page import="java.util.Set" %>
+<%@ page import="java.util.List" %>
 <%--
   Created by IntelliJ IDEA.
   User: DELL
@@ -18,7 +19,7 @@
         <h1>All Orders</h1>
         <hr />
         <%! private static final String CUSTOM_DATE_TIME_FORMAT = "dd/MM/YYYY  HH:mm:ss";%>
-        <% Set<Order> orders = ((OrderRepository) application.getAttribute("orders")).takeAllOrdersSorted();
+        <% List<Order> orders = ((OrderRepository) application.getAttribute("orders")).takeAllOrdersSorted();
 
         if (orders.size() > 0) {
             for(Order order : orders) { %>

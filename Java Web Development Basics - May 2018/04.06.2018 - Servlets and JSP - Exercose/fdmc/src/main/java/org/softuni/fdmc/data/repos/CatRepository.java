@@ -4,6 +4,7 @@ import org.softuni.fdmc.data.models.Cat;
 
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -30,9 +31,10 @@ public class CatRepository {
         this.cats.add(cat);
     }
 
-    public Set<Cat> getAllCatsSorted() {
-        return Collections.unmodifiableSet(this.cats.stream()
+    public List<Cat> getAllCatsSorted() {
+        List<Cat> collect = this.cats.stream()
                 .sorted((a, b) -> b.getViewsCount().compareTo(a.getViewsCount()))
-                .collect(Collectors.toSet()));
+                .collect(Collectors.toList());
+        return Collections.unmodifiableList(collect);
     }
 }

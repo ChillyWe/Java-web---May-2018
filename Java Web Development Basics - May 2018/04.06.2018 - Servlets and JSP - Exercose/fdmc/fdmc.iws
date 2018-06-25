@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OrderRepository.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrderRepository.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/fdmc/data/repos/OrderRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            <state relative-caret-position="289">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,15 +33,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CatRepository.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CatRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/fdmc/data/repos/CatRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="220">
+              <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#279#280#0" expanded="true" />
                 <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/web/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -59,8 +63,8 @@
       <file leaf-file-name="CreateOrderServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/fdmc/servlets/orders/CreateOrderServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="340">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,7 +84,7 @@
       <file leaf-file-name="profile.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/cats/profile.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
+            <state relative-caret-position="544">
               <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
             </state>
           </provider>
@@ -89,8 +93,8 @@
       <file leaf-file-name="all.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/orders/all.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="241">
+              <caret line="21" column="93" selection-start-line="21" selection-start-column="93" selection-end-line="21" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -107,8 +111,8 @@
       <file leaf-file-name="all.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/cats/all.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="340">
+              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -142,11 +146,11 @@
         <option value="$PROJECT_DIR$/src/main/java/org/softuni/fdmc/servlets/cats/CatsProfileServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/softuni/fdmc/servlets/orders/CreateOrderServlet.java" />
         <option value="$PROJECT_DIR$/web/cats/profile.jsp" />
-        <option value="$PROJECT_DIR$/web/orders/all.jsp" />
-        <option value="$PROJECT_DIR$/web/cats/all.jsp" />
         <option value="$PROJECT_DIR$/web/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/org/softuni/fdmc/data/repos/OrderRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/softuni/fdmc/data/repos/CatRepository.java" />
+        <option value="$PROJECT_DIR$/web/cats/all.jsp" />
+        <option value="$PROJECT_DIR$/web/orders/all.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/fdmc/data/repos/OrderRepository.java" />
       </list>
     </option>
   </component>
@@ -182,7 +186,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,130 +226,6 @@
             <path>
               <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
               <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="softuni" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="softuni" type="462c0819:PsiDirectoryNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="softuni" type="462c0819:PsiDirectoryNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="softuni" type="462c0819:PsiDirectoryNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="softuni" type="462c0819:PsiDirectoryNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="repos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="softuni" type="462c0819:PsiDirectoryNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="servlets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="softuni" type="462c0819:PsiDirectoryNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="servlets" type="462c0819:PsiDirectoryNode" />
-              <item name="cats" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="softuni" type="462c0819:PsiDirectoryNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="servlets" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="softuni" type="462c0819:PsiDirectoryNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="servlets" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fdmc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -364,7 +244,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,11 +406,13 @@
       <workItem from="1528445144817" duration="10782000" />
       <workItem from="1528627996885" duration="6837000" />
       <workItem from="1528655735057" duration="3925000" />
+      <workItem from="1528882822563" duration="53000" />
+      <workItem from="1528972540645" duration="1483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32803000" />
+    <option name="totallyTimeSpent" value="34339000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -542,23 +424,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50075644" side_tool="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32838285" />
       <window_info anchor="right" id="Maven Projects" order="11" />
-      <window_info anchor="right" id="CDI" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="CDI" order="8" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="JSF" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="JSF" order="5" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39106753" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38943896" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49924356" weight="0.32673267" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -566,19 +447,19 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3278867" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32673267" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19894099" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32995737" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +475,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/softuni/fdmc/data/repos/CatRepository.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -674,10 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -738,6 +623,10 @@
             <element signature="imports" expanded="true" />
             <element signature="e#279#280#0" expanded="true" />
             <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -753,10 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -827,10 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -888,10 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -926,13 +803,13 @@
     <entry file="file://$PROJECT_DIR$/web/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/cats/profile.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
+        <state relative-caret-position="544">
           <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
         </state>
       </provider>
@@ -944,17 +821,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/orders/all.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/fdmc/servlets/orders/CreateOrderServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="340">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -968,31 +838,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/fdmc/data/repos/CatRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/cats/all.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="340">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/orders/all.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="21" column="93" selection-start-line="21" selection-start-column="93" selection-end-line="21" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/fdmc/data/repos/OrderRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="289">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/fdmc/data/repos/CatRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
           </folding>
         </state>
       </provider>
