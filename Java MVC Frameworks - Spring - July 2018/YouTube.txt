@@ -1,3 +1,5 @@
 Introduction - https://www.youtube.com/watch?v=JHL7CatlmHU&feature=youtu.be&t=7
 Spring Boot Introduction - https://www.youtube.com/watch?v=LJF7pkNB938&feature=youtu.be
 Spring Essentials - https://www.youtube.com/watch?v=R8HGgZIeDPw&feature=youtu.be
+Spring Boot MVC Essentials - Exercise - https://www.youtube.com/watch?v=7fwCq5TqT4g&feature=youtu.be
+Spring Boot MVC Thymeleaf Engine - https://www.youtube.com/watch?v=KTpi-flZZ_s&feature=youtu.be
