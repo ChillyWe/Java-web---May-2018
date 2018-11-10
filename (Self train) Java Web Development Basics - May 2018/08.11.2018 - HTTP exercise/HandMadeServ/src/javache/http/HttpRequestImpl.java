@@ -47,7 +47,7 @@ public class HttpRequestImpl implements HttpRequest {
 
     @Override
     public void setRequestUrl(String requestUrl) {
-        this.requestUrl = requestUrl.substring(8, requestUrl.length());
+        this.requestUrl = requestUrl;
     }
 
     @Override

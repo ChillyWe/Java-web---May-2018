@@ -36,7 +36,6 @@ public class HttpResponseImpl implements HttpResponse {
 
     @Override
     public byte[] getBytes() {
-        String debug = "";
         byte[] headersBytes = this.getHeadersBytes();
         byte[] bodyBytes = this.getContent();
 
@@ -64,7 +63,6 @@ public class HttpResponseImpl implements HttpResponse {
     }
 
     private byte[] getHeadersBytes() {
-        String debug = "";
         String responseLine = String.format("%s %s%s", WebConstants.HTTP_PROTOCOL_1, this.getStatusCode().getStatusPhrase(), System.lineSeparator());
         StringBuilder headers = new StringBuilder(responseLine);
         for (Map.Entry<String, String> entry : this.headers.entrySet()) {

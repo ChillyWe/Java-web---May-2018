@@ -39,7 +39,6 @@ public class ConnectionHandler extends Thread{
         try {
             String requestContent = Reader.readAllLines(this.clientSocketInputStream);
 
-
             byte[] responseContent = this.requestHandler.handleRequest(requestContent);
             Writer.writeBytes(responseContent, this.clientSocketOutputStream);
 

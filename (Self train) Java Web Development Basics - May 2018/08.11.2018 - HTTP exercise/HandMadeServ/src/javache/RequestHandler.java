@@ -16,7 +16,7 @@ public class RequestHandler {
     private static final String ASSETS_PATH = RESOURCES_PATH + "assets\\";
     private static final String NOT_FOUND_PAGE = "not_found.html";
 
-    private static final Map<String, String> CONTENT_TYPES = new HashMap<String, String>() {{
+    private static final Map<String, String> CONTENT_TYPES = new HashMap<>() {{
         put("html", "text/html; charset=utf-8");
         put("txt", "text/plain; charset=utf-8");
         put("png", "image/png");
@@ -37,13 +37,11 @@ public class RequestHandler {
     public byte[] handleRequest(String requestContent) {
         this.httpRequest = new HttpRequestImpl(requestContent);
 
-
         byte[] result = null;
 
         if (this.httpRequest.getMethod().equals("GET")) {
             result = this.processGetRequest();
         }
-
         return result;
     }
 
@@ -56,10 +54,8 @@ public class RequestHandler {
         return this.processResourceRequest();
     }
 
-//
-    private byte[] processPageRequest(String page) {
 
-        String debug = "";
+    private byte[] processPageRequest(String page) {
         if (page.equals("/")) {
             page = "index";
         }
@@ -92,7 +88,6 @@ public class RequestHandler {
     }
 
     private byte[] processResourceRequest() {
-        String debug = "";
         String assetPath = this.httpRequest.getRequestUrl();
 
         File file = new File(ASSETS_PATH + assetPath);
@@ -100,7 +95,6 @@ public class RequestHandler {
         if (!file.exists() || file.isDirectory()) {
             return this.notFound(("Asset not found!").getBytes());
         }
-
         byte[] result;
 
         try {
@@ -113,7 +107,6 @@ public class RequestHandler {
         this.httpResponse.addHeader("Content-Length", result.length + "");
         this.httpResponse.addHeader("Content-Disposition", "inline");
 
-
         this.httpResponse.addHeader("Cache-Control", "public,max-age=604800");
         this.httpResponse.addHeader("Accept-Ranges", "bytes");
         this.httpResponse.addHeader("X-Frame-Options", "deny");
@@ -122,7 +115,6 @@ public class RequestHandler {
     }
 
     private byte[] ok(byte[] content) {
-        String debug = "";
         this.httpResponse.setStatusCode(HttpStatus.OK);
         this.httpResponse.setContent(content);
         return this.httpResponse.getBytes();

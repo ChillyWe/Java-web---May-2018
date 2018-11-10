@@ -16,5 +16,4 @@ public final class WebConstants {
 
     public static final String TIME_OUT_DETECTED_MESSAGE = "TimeOut Detected";
 
-
 }
