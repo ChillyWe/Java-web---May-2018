@@ -5,3 +5,5 @@ Web Fundamentals Introduction - https://youtu.be/9cgy2bvZvt4
 
 HTTP Protocol - https://youtu.be/CqGeNR-0VOI
 
+HTTP Protocol - Exercise - https://youtu.be/nXFNPH46mII
+
