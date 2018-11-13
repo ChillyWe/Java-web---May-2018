@@ -1,6 +1,8 @@
 package javache;
 
 public final class WebConstants {
+    private WebConstants() {
+    }
 
     public static final String EMPTY_STRING = "";
 

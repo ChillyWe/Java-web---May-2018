@@ -7,3 +7,9 @@ HTTP Protocol - https://youtu.be/CqGeNR-0VOI
 
 HTTP Protocol - Exercise - https://youtu.be/nXFNPH46mII
 
+State Managemant - https://youtu.be/ip031dvepEk
+
+State Managemant - Exercise - https://youtu.be/X8l4-Q87Yv0
+
+WorkShop: Web + Hibernate - https://youtu.be/irOXI8wfk78
+

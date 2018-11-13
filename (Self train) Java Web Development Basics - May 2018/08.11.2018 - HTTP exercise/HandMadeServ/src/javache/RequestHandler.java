@@ -14,7 +14,7 @@ public class RequestHandler {
     private static final String RESOURCES_PATH = System.getProperty("user.dir") + "\\src\\resources\\";
     private static final String PAGES_PATH = RESOURCES_PATH + "pages\\";
     private static final String ASSETS_PATH = RESOURCES_PATH + "assets\\";
-    private static final String NOT_FOUND_PAGE = "not_found.html";
+    private static final String NOT_FOUND_PAGE = "not-found.html";
 
     private static final Map<String, String> CONTENT_TYPES = new HashMap<>() {{
         put("html", "text/html; charset=utf-8");
@@ -26,16 +26,20 @@ public class RequestHandler {
     }};
     private static final String HTML_EXTENSION_AND_SEPARATOR = ".html";
 
-
     private HttpRequest httpRequest;
+
     private HttpResponse httpResponse;
 
-    public RequestHandler() {
-        this.httpResponse = new HttpResponseImpl();
+    private HttpSessionStorage sessionStorage;
+
+    public RequestHandler(HttpSessionStorage sessionStorage) {
+        this.sessionStorage = sessionStorage;
     }
 
     public byte[] handleRequest(String requestContent) {
+        String debug = "";
         this.httpRequest = new HttpRequestImpl(requestContent);
+        this.httpResponse = new HttpResponseImpl();
 
         byte[] result = null;
 
@@ -56,6 +60,7 @@ public class RequestHandler {
 
 
     private byte[] processPageRequest(String page) {
+        String debug = "";
         if (page.equals("/")) {
             page = "index";
         }
@@ -109,7 +114,6 @@ public class RequestHandler {
 
         this.httpResponse.addHeader("Cache-Control", "public,max-age=604800");
         this.httpResponse.addHeader("Accept-Ranges", "bytes");
-        this.httpResponse.addHeader("X-Frame-Options", "deny");
 
         return this.ok(result);
     }

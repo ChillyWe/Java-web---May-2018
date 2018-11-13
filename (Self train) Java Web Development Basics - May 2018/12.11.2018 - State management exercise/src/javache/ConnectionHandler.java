@@ -3,13 +3,10 @@ package javache;
 import javache.io.Reader;
 import javache.io.Writer;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.Socket;
 
-public class ConnectionHandler extends Thread{
-
+public class ConnectionHandler extends Thread {
     private Socket clientSocket;
 
     private InputStream clientSocketInputStream;
@@ -24,7 +21,6 @@ public class ConnectionHandler extends Thread{
     }
 
     private void initializeConnection(Socket clientSocket) {
-
         try {
             this.clientSocket = clientSocket;
             this.clientSocketInputStream = this.clientSocket.getInputStream();
@@ -37,19 +33,9 @@ public class ConnectionHandler extends Thread{
     @Override
     public void run() {
         try {
-
-            String requestContent;
-
-            while (true) {
-                requestContent = Reader.readAllLines(this.clientSocketInputStream);
-
-                if (requestContent.length() > 0) {
-                    break;
-                }
-            }
+            String requestContent = Reader.readAllLines(this.clientSocketInputStream);
             byte[] responseContent = this.requestHandler.handleRequest(requestContent);
             Writer.writeBytes(responseContent, this.clientSocketOutputStream);
-
             this.clientSocketInputStream.close();
             this.clientSocketOutputStream.close();
             this.clientSocket.close();
@@ -58,3 +44,9 @@ public class ConnectionHandler extends Thread{
         }
     }
 }
+
+
+
+
+
+
