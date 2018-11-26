@@ -13,3 +13,9 @@ State Managemant - Exercise - https://youtu.be/X8l4-Q87Yv0
 
 WorkShop: Web + Hibernate - https://youtu.be/irOXI8wfk78
 
+WorkShop: Web + Hibernate - Exercise - https://www.youtube.com/watch?v=PHkMqpAe4mI&feature=youtu.be
+
+Introduction to Java EE - https://youtu.be/9PLt1kI3rvo
+
+Introduction to Java EE - Exercise - https://youtu.be/4cvbWhVlGxo
+
