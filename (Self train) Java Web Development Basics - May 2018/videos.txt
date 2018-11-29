@@ -19,3 +19,7 @@ Introduction to Java EE - https://youtu.be/9PLt1kI3rvo
 
 Introduction to Java EE - Exercise - https://youtu.be/4cvbWhVlGxo
 
+Jave EE Servlet API 4.0 and JSP - https://www.youtube.com/watch?v=KRF3-0ikOqU&feature=youtu.be
+
+Java EE Servlet API 4.0 and JSP - Exercise - https://youtu.be/4BNEH4dREK4
+
