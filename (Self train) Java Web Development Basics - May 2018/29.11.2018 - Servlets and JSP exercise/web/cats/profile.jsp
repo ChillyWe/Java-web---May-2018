@@ -17,12 +17,15 @@
     <% String catName = request.getParameter("catName"); %>
     <% Cat cat = ((CatRepository) application.getAttribute("cats")).getByName(catName); %>
     <% if(cat != null) { %>
+    <% cat.increaseViews(); %>
     <h1>Cat - <%=cat.getName()%></h1>
     <hr />
     <h3>Breed: <%= cat.getBreed()%></h3>
     <h3>Color: <%= cat.getColor()%></h3>
     <h3>Number Of Legs: <%= cat.getNumberOfLegs()%></h3>
     <h3>Creator: <%= cat.getCreator().getUsername()%></h3>
+    <hr>
+    <h3>Cat views: <%= cat.getViews() %></h3>
     <hr />
     <% } else { %>
     <h1>Cat, with name <%=catName%> was not found.</h1>

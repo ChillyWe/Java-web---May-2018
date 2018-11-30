@@ -27,10 +27,14 @@ public class CatsCreateServlet extends HttpServlet {
         Integer numberOfLegs = Integer.parseInt(req.getParameter("numberOfLegs"));
         User creator = ((UserRepository)this.getServletContext().getAttribute("users")).getByUsername(req.getSession().getAttribute("username").toString());
 
-        Cat cat = new Cat(name, breed, color, numberOfLegs, creator);
+        if (creator.isAdmin()) {
+            Cat cat = new Cat(name, breed, color, numberOfLegs, creator);
+            ((CatRepository)this.getServletContext().getAttribute("cats")).addCat(cat);
 
-        ((CatRepository)this.getServletContext().getAttribute("cats")).addCat(cat);
+            resp.sendRedirect("/cats/profile?catName=" + cat.getName());
+            return;
+        }
 
-        resp.sendRedirect("/cats/profile?catName=" + cat.getName());
+        resp.sendRedirect("/");
     }
 }

@@ -11,12 +11,15 @@ public class Cat {
 
     private User creator;
 
+    private Integer views;
+
     public Cat(String name, String breed, String color, Integer numberOfLegs, User creator) {
         this.setName(name);
         this.setBreed(breed);
         this.setColor(color);
         this.setNumberOfLegs(numberOfLegs);
         this.setCreator(creator);
+        this.setViews(0);
     }
 
     public String getName() {
@@ -57,5 +60,17 @@ public class Cat {
 
     public void setCreator(User creator) {
         this.creator = creator;
+    }
+
+    public Integer getViews() {
+        return views;
+    }
+
+    public void setViews(Integer views) {
+        this.views = views;
+    }
+
+    public void increaseViews() {
+        this.views++;
     }
 }

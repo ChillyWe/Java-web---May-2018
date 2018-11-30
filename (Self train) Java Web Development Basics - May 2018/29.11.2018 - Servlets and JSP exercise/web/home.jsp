@@ -1,3 +1,5 @@
+<%@ page import="org.softuni.fdmc.data.repos.UserRepository" %>
+<%@ page import="org.softuni.fdmc.data.models.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -16,7 +18,12 @@
 <br/>
 <a href="/users/register">Register</a>
 <% } else { %>
+<% String userName = (String) session.getAttribute("username"); %>
+<% UserRepository users = (UserRepository) application.getAttribute("users"); %>
+<% User user = users.getByUsername(userName);%>
+<% if (user.isAdmin()) {%>
 <a href="/cats/create">Create Cat</a>
+<% } %>
 <br/>
 <a href="/cats/all">All Cats</a>
 <br/>

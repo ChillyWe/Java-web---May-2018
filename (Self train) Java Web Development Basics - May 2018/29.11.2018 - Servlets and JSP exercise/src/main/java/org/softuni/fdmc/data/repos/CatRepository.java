@@ -2,15 +2,14 @@ package org.softuni.fdmc.data.repos;
 
 import org.softuni.fdmc.data.models.Cat;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class CatRepository {
-    private Set<Cat> cats;
+    private List<Cat> cats;
 
     public CatRepository() {
-        this.cats = new HashSet<>();
+        this.cats = new ArrayList<>();
     }
 
     public Cat getByName(String catName) {
@@ -21,8 +20,10 @@ public class CatRepository {
                 .orElse(null);
     }
 
-    public Set<Cat> getAllCats() {
-        return Collections.unmodifiableSet(this.cats);
+    public List<Cat> getAllCats() {
+        return Collections.unmodifiableList(this.cats.stream()
+                .sorted((x, y) -> y.getViews().compareTo(x.getViews()))
+                .collect(Collectors.toList()));
     }
 
     public void addCat(Cat cat) {
