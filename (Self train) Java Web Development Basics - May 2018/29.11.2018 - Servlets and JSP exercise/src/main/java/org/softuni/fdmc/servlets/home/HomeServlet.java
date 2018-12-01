@@ -1,6 +1,7 @@
 package org.softuni.fdmc.servlets.home;
 
 import org.softuni.fdmc.data.repos.CatRepository;
+import org.softuni.fdmc.data.repos.OrderRepository;
 import org.softuni.fdmc.data.repos.UserRepository;
 
 import javax.servlet.ServletException;
@@ -16,6 +17,7 @@ public class HomeServlet extends HttpServlet {
     public void init() throws ServletException {
         this.getServletContext().setAttribute("cats", new CatRepository());
         this.getServletContext().setAttribute("users", new UserRepository());
+        this.getServletContext().setAttribute("orders", new OrderRepository());
     }
 
     @Override

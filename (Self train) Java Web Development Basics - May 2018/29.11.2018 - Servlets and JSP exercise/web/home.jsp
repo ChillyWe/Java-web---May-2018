@@ -22,7 +22,9 @@
 <% UserRepository users = (UserRepository) application.getAttribute("users"); %>
 <% User user = users.getByUsername(userName);%>
 <% if (user.isAdmin()) {%>
-<a href="/cats/create">Create Cat</a>
+<a href="/cats/create">Create Cat</a><br>
+<a href="/orders/allorders">All Orders</a><br>
+<hr/>
 <% } %>
 <br/>
 <a href="/cats/all">All Cats</a>

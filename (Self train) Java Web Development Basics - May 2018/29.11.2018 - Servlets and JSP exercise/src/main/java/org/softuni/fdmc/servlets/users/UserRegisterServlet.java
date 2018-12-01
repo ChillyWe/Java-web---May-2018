@@ -37,8 +37,6 @@ public class UserRegisterServlet extends HttpServlet {
             user = new User(username, password);
         }
 
-        String debug = "";
-
         ((UserRepository) this.getServletContext().getAttribute("users")).addUser(user);
 
         resp.sendRedirect("/");

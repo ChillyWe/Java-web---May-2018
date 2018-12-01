@@ -25,6 +25,10 @@
     <h3>Number Of Legs: <%= cat.getNumberOfLegs()%></h3>
     <h3>Creator: <%= cat.getCreator().getUsername()%></h3>
     <hr>
+        <form action="/cats/profile" method="Post">
+        <input type="submit" name="catName" value="Order <%= catName%>"/>
+        </form>
+    <hr>
     <h3>Cat views: <%= cat.getViews() %></h3>
     <hr />
     <% } else { %>
